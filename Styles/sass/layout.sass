@@ -1,0 +1,65 @@
+header
+    display: flex
+    flex-flow: row wrap
+    background: pink
+    .nav_bar
+        flex-basis: 100%
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+        padding: 1em 1.5em
+        .logo_block
+            &__logo
+                font-weight: 600
+                text-transform: uppercase
+                color: #182c5c
+    .home_banner
+        flex-grow: 1
+        flex-shrink: 0
+        height: 100%
+        flex-basis: 100%
+        padding: 4em 1.5em
+        background: #ddd
+        text-align: center
+
+.btn
+    display: inline-block
+    padding: .65em 1.15em
+    text-transform: capitalize
+    font-size: 1.6rem
+    font-weight: 600
+    border-radius: .25em
+    border: none
+    cursor: pointer
+
+.input
+    position: relative
+    &__text
+        padding: .5em
+        transition: background .2s ease
+    &__text-label
+        position: absolute
+        left: .5em
+        top: 50%
+        transform: translateY(-50%)
+        text-transform: capitalize
+        color: #636363
+
+    &:focus-within
+        .input__text
+            outline: none
+        .input__text-label
+            font-size: 1.4rem
+            color: red
+            background: #fff
+            padding: .15em .25em
+            margin-inline: -.25em
+            top: 0
+
+.form > form
+    width: 100%
+    // outline: 1px solid red
+    display: flex
+    flex-flow: column nowrap
+    gap: .5em

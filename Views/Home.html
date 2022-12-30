@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=h1, initial-scale=1.0" />
+		<link rel="stylesheet" href="../Styles/main.css" />
+		<link rel="stylesheet" href="../Styles/layout.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="nav_bar">
+				<div class="logo_block">
+					<span class="logo_block__logo">Message Board</span>
+				</div>
+				<div class="nav_bar__control_block">
+					<button aria-label="create account" class="btn">create account</button>
+					<button aria-label="sign in" class="btn">sign in</button>
+				</div>
+			</div>
+			<div class="home_banner">
+				<div class="row">
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section>
+				<div class="container">
+					<div class="form form__resiger">
+						<form action="">
+							<div class="input">
+								<input class="input input__text" type="text" name="fullname" id="fullname" onchange="" />
+								<label class="input input__text-label" for="fullname">enter your name</label>
+							</div>
+							<div class="input">
+								<input class="input input__text" type="email" name="email" id="email" onchange="" />
+								<label class="input input__text-label" for="email">email</label>
+							</div>
+							<div class="input">
+								<input class="input input__text" type="password" name="password" id="password" onchange="" />
+								<label class="input input__text-label" for="password">password</label>
+							</div>
+							<div class="input">
+								<input class="input input__text" type="password" name="repassword" id="repassword" onchange="" />
+								<label class="input input__text-label" for="repassword">confirm your password</label>
+							</div>
+							<button type="submit" class="btn">Register</button>
+						</form>
+					</div>
+					<div class="form form__login">
+						<form action="">
+							<div class="input">
+								<input class="input input__text" type="email" name="email" id="email" onchange="" />
+								<label class="input input__text-label" for="fullname">email</label>
+							</div>
+							<div class="input">
+								<input class="input input__text" type="password" name="password" id="password" onchange="" />
+								<label class="input input__text-label" for="password">password</label>
+							</div>
+							<button type="submit" class="btn">login</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
