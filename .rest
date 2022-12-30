@@ -1,0 +1,49 @@
+POST http://localhost:90/message_board/
+Content-Type: text/html
+
+{
+    "name": "john",
+    "email": "johnnyDoe@gmail.com",
+    "username": "jonnyjohn",
+    "password": "just@pa$$word",
+    "confirm_password": "just@pa$$word"
+}
+###
+
+POST http://localhost:90/message_board/
+Content-Type: text/html
+
+{
+    "username": "johnnyDoe@gmail.com",
+    "password": "just@pa$$word"
+}
+###
+
+POST http://localhost:90/message_board/
+Content-Type: text/html
+
+{
+    "name": "",
+    "email": "",
+    "username": ""
+}
+###
+
+# update password
+POST http://localhost:90/message_board/
+Content-Type: text/html
+
+{
+    "old_password": "",
+    "new_password": "",
+    "confirm_password": ""
+}
+###
+
+POST http://localhost:90/message_board/
+Content-Type: image/png
+
+{
+    "user_id": "000ALFDJO34",
+    "user_photo": "./test.png"
+}
